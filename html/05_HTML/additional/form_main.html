@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center" width="700">
+        <tr valign="top">
+            <td>
+                <h2>Простая форма поиска с вариантами:</h2>
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <form action="http://fe.it-academy.by/TestForm.php" name="form" method="get">
+                        <input type="text" id="search_area" name="search" maxlength="10"><label for="search_area"> <button>Искать</button></label><br>
+                        <label><input type="radio" name="method" value="site" checked>на сайте</label>
+                        <label><input type="radio" name="method" value="google">в google</label>
+                        <p><i>Длина запроса не более 10 символов</i></p>
+                    </form>
+                </fieldset>
+            </td>
+            <td>
+                <h2>Простая форма поиска с вариантами:</h2>
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <form action="http://fe.it-academy.by/TestForm.php" name="form" method="get">
+                        <input autofocus type="text" id="search_area" name="search" maxlength="10" required><label for="search_area">* <button>Искать</button></label><br>
+                        <label><input type="radio" name="method" value="site">на сайте</label>
+                        <label><input type="radio" name="method" value="google" checked>в google</label>
+                        <p><i>* - обязательное поле</i></p>
+                        <p><i>Автофокус в поле поиска</i></p>
+                    </form>
+                </fieldset>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                <h2>Простая форма авторизации:</h2>
+                <fieldset>
+                    <legend>Авторизируйтесь</legend>
+                    <form action="http://fe.it-academy.by/TestForm.php" name="form" method="get">
+                        <input type="text" name="Login" id="login" required>* <label for="login" >Логин</label><br>
+                        <input type="password" name="pass_area" id="pass_area" required>* <label for="pas_area" >Пароль</label><br>
+                        <input type="checkbox" name="system_status" id="system_status"><label for="system_status">Оставаться в системе</label>
+                        <p><i>* - обязательное поле</i></p>
+                        <button>Войти</button>
+                    </form>
+                </fieldset>
+            </td>
+            <td>
+                <h2>Опрос(голосование):</h2>
+                <fieldset>
+                    <legend>Как Вам ?</legend>
+                    <form action="http://fe.it-academy.by/TestForm.php" name="form" method="get"></form>
+                        <input type="radio" value="nothing" name="nothing"><label>ничего</label><br>
+                        <input type="radio" id=""><label>2</label><br>
+                        <input type="radio" id=""><label>3</label><br>
+                        <button>Отправить</button>
+
+                </fieldset>
+
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                <h2>Отзыв:</h2>
+            </td>
+            <td>
+                <h2>Выпадающий и мульти списки:</h2>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                <h2>Загрузка файла на сервер:</h2>
+            </td>
+            <td>
+                <h2>Валидация данных HTML5:</h2>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
