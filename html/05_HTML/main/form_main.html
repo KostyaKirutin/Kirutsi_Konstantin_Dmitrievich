@@ -53,12 +53,14 @@
                 <h2>Опрос(голосование):</h2>
                 <fieldset>
                     <legend>Как Вам ?</legend>
-                    <form action="http://fe.it-academy.by/TestForm.php" name="form" method="get"></form>
-                        <input type="radio" value="nothing" name="nothing"><label>ничего</label><br>
-                        <input type="radio" id=""><label>2</label><br>
-                        <input type="radio" id=""><label>3</label><br>
-                        <button>Отправить</button>
-
+                    <form action="http://fe.it-academy.by/TestForm.php" name="form" method="get" id="form_1"></form>
+                        <label><input type="radio" name="method" value="nothing" form="form_1" checked>ничего</label><br>
+                        <label><input type="radio" name="method" value="bad" form="form_1">неплохо</label><br>
+                        <label><input type="radio" name="method" value="good" form="form_1">хорошо</label><br>
+                        <label><input type="radio" name="method" value="excellent" form="form_1">супер</label><br>
+                        <input type="hidden" name="date_voite" value="2013.12.31" form="form_1">
+                        <button form="form_1">Отправить</button>
+                        <p><i>Есть скрытое поле name=date_voite, value="2013.12.31"</i></p>
                 </fieldset>
 
             </td>
@@ -66,6 +68,16 @@
         <tr valign="top">
             <td>
                 <h2>Отзыв:</h2>
+                <fieldset>
+                    <legend>Оставьте Ваш отзыв</legend>
+                    <form action="http://fe.it-academy.by/TestForm.php" name="form" method="post" id="form_2">
+                        <input type="text" name="Login" id="login">* <label for="login" >Имя</label><br>
+                        <input type="email" name="email" id="email">* <label for="email" >e-mail</label><br>
+                        <p><textarea lang="ru" name="area_ru" form="form_2">Форма отправки</textarea></p>
+                        <p><i>* - обязательное поле</i></p>
+                        <button>Войти</button>
+                    </form>
+                </fieldset>
             </td>
             <td>
                 <h2>Выпадающий и мульти списки:</h2>
