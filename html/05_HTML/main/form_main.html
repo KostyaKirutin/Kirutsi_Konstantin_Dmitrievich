@@ -109,9 +109,23 @@
         <tr valign="top">
             <td>
                 <h2>Загрузка файла на сервер:</h2>
+                <fieldset>
+                    <legend>Upload</legend>
+                    <form action="http://fe.it-academy.by/TestForm.php" name="form_7" method="post" enctype="multipart/form-data">
+                        <p>Файл:<br><input type="file" name="f"><br>
+                        Срок хранения (года):<br>
+                        <input type="text" name="live_token_07" maxlength="4"><input type="submit" value="Отправить"></p>
+                    </form>
+                </fieldset>
             </td>
             <td>
                 <h2>Валидация данных HTML5:</h2>
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                <form action="http://fe.it-academy.by/TestForm.php" name="form_8" method="get" enctype="multipart/form-data">
+                    <p><input type="text" name="language_08"></p>
+                </form>
+                </fieldset>
             </td>
         </tr>
     </table>
