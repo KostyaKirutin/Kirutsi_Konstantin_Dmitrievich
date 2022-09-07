@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Программа на Python, Часть 1</title>
+    <style>
+        @media screen {
+            body{
+                font-family: sans-serif;
+                font-size: 14px;
+                background-color: #eee;
+            }
+        }
+        @media Print {
+            body{
+                font-family: sans-serif;
+                font-size: 28px;
+                background-color: brown;
+            }
+        }
+</style>
+</head>
+<body>
+    <h1><img src="../../../../html/04_HTML/imagine_src/Icon-Python.7bb116a5.png" align="right" alt="error, please try again later" title="">HOW-TO: Программа на Python, Часть 1 </h1>
+       <ul>
+        <li><a href="python_part1_link_src.html"><em>Программа на Python — часть 1</em></a></li>
+        <li><a href="python_part2_link_src.html"><em>Программа на Python — часть 2</em></a></li>
+        <li><a href="python_part3_link_src.html"><em>Программа на Python — часть 3</em></a></li>
+       </ul>
+    <h2>Содержание</h2>
+    <h2>HOW-TO: Программа на Python, Часть 1</h2>
+       <ul>
+        <li><a href="#chapter1">Наша первая программа</a></li>
+        <li><a href="#chapter2">Пример цикла For</a></li>
+       </ul>
+    <p>
+        Из множества существующих языков программирования Python — один из самых лёгких
+        в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+        Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+        обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+        создание консольных приложений, а в следующей — программирование графических
+        интерфейсов (<u>GUI</u>). Давайте создадим простую программу прямо сейчас
+    </p>
+    <h2><a name="chapter1">Наша первая программа</a></h2>
+    <a href="#">К содержанию</a>
+    <p>
+        Наберём код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберёмся, что делает
+        каждая строка и пойдём дальше.
+    </p>
+    <p>
+        Введите эти 4 строки:
+    </p>
+    <pre><code>#!/usr/bin/env python
+print 'Hello. I am a python program.'
+name = raw_input("What is your name?")
+print "Hello there, " + name + "!"</code></pre>
+    <p>
+        Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в папке
+        <b>python_examples</b> в домашнем каталоге. Этот пример показывает, как просто написать
+        программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+        этого введите в терминале
+    </p>
+    <em><b><u>
+        chmod +x hello.py
+    </u></b></em>
+    <p>
+        в папке, в которой вы сохранили программу. Теперь запустите её.
+    </p>
+    <pre><code>greg@earth:~/python_examples$ ./hello.py
+Hello. I am a python program.
+What is your name? Ferd Burphel
+Hello there, Ferd Burphel!
+greg@earth:~/python_examples$</code></pre>
+    <p>
+        Вот и всё.
+    </p>
+    <h2>
+        <a name="chapter2">Пример цикла For</a>
+    </h2>
+    <a href="#">К содержанию</a>
+    <p>
+        Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+        редактор и наберите следующую программу:
+    </p>
+    <pre><code>#!/usr/bin/env python
+for cntr in range(0,10):
+    print cntr</code></pre>
+    <p>
+        <em>Не забудьте поставить символ табуляции перед строкой «print cntr»</em>. Это важно. В
+        Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки
+        как в других языках программирования, а отступы.
+    </p>
+    <p align="middle"><a href=""><img src="../../../../html/04_HTML/imagine_src/left_indicator.png" align="left" alt="error, please try again later"  title=""></a><a href="#"><img src="../../../../html/04_HTML/imagine_src/home_indicator.png" alt="error, please try again later" ></a><a href=""></a><a href="python_part2_link_src.html"><img src="../../../../html/04_HTML/imagine_src/right_indicator.png" align="right" alt="error, please try again later"  title=""></a></p>
+</body>
+</html>
