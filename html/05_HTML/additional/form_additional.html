@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body align="center">
+    <h1>Заполните анкету</h1>
+    <form action="https://webhook.site/7502d89d-5a6b-4e19-aef6-3001d4ea5744" name="form_01" method="post">
+        <fieldset>
+            <legend>Личные данные</legend>
+            <input type="text" name="last_name" placeholder="Фамилия" required autofocus pattern="[А-Я-а-я]{1,25}"> text: Только кирилица без пробелов, длина поля 25, обязательное поле, автофокус на данном поле)<br>
+            <input type="text" name="first_name" placeholder="Имя" required pattern="[А-Я-а-я]{1,20}">text: Только кирилица без пробелов, длина поля 20, обязательное поле)<br>
+            <input type="text" name="second_name" placeholder="Отчество" required pattern="[А-Я-а-я]{1,24}">text: Только кирилица без пробелов, длина поля 24, обязательное поле)<br>
+            <fieldset>
+                <legend>Паспортные данные</legend>
+                <p>text: Серия - только заглавные две латинские буквы с длинной 2 и максимальным количеством символов 2, количество букв не мение 2, обязательное роле <br>
+                text: номер паспорта - только цифры с длинной 7 и максимальным количеством символов 7, количество символов не менее 7, обязательное поле</p><br>
+                <input type="text" name="passport_seria" maxlength="2" required pattern="[A-Z]{2,2}">
+                <input type="text" name="passport_number" maxlength="7" required pattern="[0-9]{7,7}">
+            </fieldset>
+            <fieldset>
+                <legend>Дата рождения</legend>
+                <input type="text" name="year" maxlength="4" pattern="[0-9]{4,4}">text: Год рождения 4-е цифры<br>
+                <select name="month" id="first">
+                    <option value="January">Январь</option>
+                    <option value="February">Февраль</option>
+                    <option value="March">Март</option>
+                    <option value="April">Апрель</option>
+                    <option value="May">Май</option>
+                    <option value="June">Июнь</option>
+                    <option value="July">Июль</option>
+                    <option value="August">Август</option>
+                    <option value="September">Сентябрь</option>
+                    <option value="October">Октябрь</option>
+                    <option value="November">Ноябрь</option>
+                    <option value="December">Декабрь</option>
+                </select>select: Месяц рождения<br>
+                <input type="number" min="1" max="31" name="number"> number: Диапозон от 1 до 31
+            </fieldset>
+            <p><select name="resident" id="second" required>
+                <option value="Russia">РБ</option>
+                <option value="Belarus">РФ</option>
+            </select>(Национальность - выбор одного значения списка, обязательное поле)<br>
+            Адресс: <br>
+            <textarea name="adress" id="adress_01"></textarea>
+        </fieldset>
+        <input type="submit">
+    </form>
+    
+</body>
+</html>
