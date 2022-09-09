@@ -1,0 +1,12 @@
+.element_1{
+    float: left;
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+}
+.element_2{
+    float: left;
+    background-color: brown;
+    width: 500px;
+    height: 500px;
+}
