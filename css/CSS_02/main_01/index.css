@@ -1,0 +1,41 @@
+div{
+    display: inline-block;
+}
+.cards_1{
+    width: 142px;
+    height: 197px;
+    background-image: url(../img/cards.7e0a18f0.png);
+    background-position: -429px -1585px;
+    z-index: 1;
+    
+}
+.cards_2{
+    width: 142px;
+    height: 197px;
+    background-image: url(../img/cards.7e0a18f0.png);
+    background-position: -429px -1784px;
+    z-index: 2;
+    margin: 0px -54px;
+
+}
+.cards_3{
+    width: 142px;
+    height: 197px;
+    background-image: url(../img/cards.7e0a18f0.png);
+    background-position: -858px -1386px;
+    margin: 0px -54px;
+}
+.cards_4{
+    width: 142px;
+    height: 197px;
+    background-image: url(../img/cards.7e0a18f0.png);
+    background-position: -714px -2182px;
+    margin: 0px -54px;
+}
+.cards_5{
+    width: 142px;
+    height: 197px;
+    background-image: url(../img/cards.7e0a18f0.png);
+    background-position: -858px -2381px;
+    margin: 0px -54px;
+}
